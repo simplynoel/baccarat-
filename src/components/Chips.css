@@ -1,0 +1,60 @@
+/* Casino Chips Styles */
+.chip {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5px;
+    cursor: pointer;
+    position: relative;
+    transition: all 0.3s ease;
+    box-shadow: 
+        0 4px 8px rgba(0, 0, 0, 0.3),
+        inset 0 2px 0 rgba(255, 255, 255, 0.3),
+        inset 0 -2px 0 rgba(0, 0, 0, 0.3);
+}
+
+.chip-value {
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 14px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+}
+
+.chip-red {
+    background: linear-gradient(145deg, #d63031 0%, #e17055 50%, #d63031 100%);
+    border: 3px solid #ffffff;
+}
+
+.chip-blue {
+    background: linear-gradient(145deg, #0984e3 0%, #74b9ff 50%, #0984e3 100%);
+    border: 3px solid #ffffff;
+}
+
+.chip-green {
+    background: linear-gradient(145deg, #00b894 0%, #55efc4 50%, #00b894 100%);
+    border: 3px solid #ffffff;
+}
+
+.chip-black {
+    background: linear-gradient(145deg, #2d3436 0%, #636e72 50%, #2d3436 100%);
+    border: 3px solid #ffd700;
+}
+
+.chip:hover {
+    transform: translateY(-3px) scale(1.1);
+    box-shadow: 
+        0 8px 16px rgba(0, 0, 0, 0.4),
+        inset 0 2px 0 rgba(255, 255, 255, 0.4),
+        inset 0 -2px 0 rgba(0, 0, 0, 0.4);
+}
+
+.chip:active {
+    transform: translateY(-1px) scale(1.05);
+    box-shadow: 
+        0 4px 8px rgba(0, 0, 0, 0.3),
+        inset 0 2px 0 rgba(255, 255, 255, 0.2),
+        inset 0 -2px 0 rgba(0, 0, 0, 0.4);
+}
